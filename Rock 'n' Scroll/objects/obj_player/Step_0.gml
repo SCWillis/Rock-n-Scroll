@@ -27,29 +27,34 @@ if(keyboard_check(ord("D")) or keyboard_check(vk_right))
 
 
 
+//Jumping
 
-//player Vertical Movement
-
-
-
-
-
-//Player Jump
-
-//if the player is on a floor that they can jump on
-
-if(keyboard_check(vk_space))
+if(jumping == true)
 {
-	if(scr_canJump(x,y,spriteHeight, playerFloors) == true)
-	{
-		
-	}
+	y -= (verticalSpeed)
 }
 
-if(scr_canJump(x,y,spriteHeight, playerFloors) != true)
+
+if((keyboard_check(vk_space)))
 {
+		jumping = true;
+		show_debug_message("Jump!!!")
+}
+
+
+//jumping = false;
+
+
+if(scr_canJump(x,y,spriteHeight, playerFloors) == false)
+{
+	//jumping = false;
 	y += playerGravity;	
 }
+
+
+
+
+
 
 
 

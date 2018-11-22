@@ -15,10 +15,11 @@ spriteHeight = 16;
 
 
 //Jumping
+jumping = false;
 canJump = false;
 jumps = 1;
 maxJumps = 1;
-playerGravity = 1;
+playerGravity = 0.2;
 jumpForce = 0;
 
 //List of possible player floors
