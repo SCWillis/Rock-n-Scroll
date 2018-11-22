@@ -29,28 +29,39 @@ if(keyboard_check(ord("D")) or keyboard_check(vk_right))
 
 //Jumping
 
-if(jumping == true)
-{
-	y -= (verticalSpeed)
-}
-
-
-if((keyboard_check(vk_space)))
+if((keyboard_check_pressed(vk_space)))
 {
 		jumping = true;
 		show_debug_message("Jump!!!")
 }
 
+ 
+if(jumping == true)
+{	
+	verticalSpeed = verticalSpeed*jumpFallRate;
+	y -= verticalSpeed;
+}
 
-//jumping = false;
+
+if(verticalSpeed <= 0.1)
+{
+	jumping = false;
+	verticalSpeed = baseVSpeed;
+}
 
 
+if(jumping == false)
+{	
+	y += playerGravity;
+}
+
+/*
 if(scr_canJump(x,y,spriteHeight, playerFloors) == false)
 {
 	//jumping = false;
-	y += playerGravity;	
+	//y += playerGravity;	
 }
-
+*/
 
 
 
