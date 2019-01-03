@@ -27,6 +27,10 @@ maxJumps = 2;
 jumpFallRate = 1;
 peakJump = -500;
 
+
+
+
+
 //List of possible player floors
 playerFloors[1] = obj_ground_basic;
 
