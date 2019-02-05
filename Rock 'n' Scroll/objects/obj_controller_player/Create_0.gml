@@ -5,10 +5,14 @@
 global.current_player = obj_player_start;
 
 
+
 if(instance_exists(global.current_player))
-{
+{	
+	
 	global.current_player.is_current_player = true;
-	show_debug_message(global.current_player.name);	
+	
+	show_debug_message(global.current_player.name);		
+	
 }
 
 
