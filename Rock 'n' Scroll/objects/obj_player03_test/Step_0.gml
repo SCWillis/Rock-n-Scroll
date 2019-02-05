@@ -7,9 +7,9 @@
 //player input ==================================================================================
 
 key_right = keyboard_check(ord("D"));
-key_right = keyboard_check(vk_right);
+//key_right = keyboard_check(vk_right);
 key_left = -(keyboard_check(ord("A")));
-key_left = -(keyboard_check(vk_left));
+//key_left = -(keyboard_check(vk_left));
 key_jump = keyboard_check_pressed(vk_space);
 
 
@@ -32,8 +32,7 @@ if(key_jump > 0 && c_jumps > 0)
 {
 	show_debug_message(c_jumps);
 	c_vspeed = key_jump * -c_jumpspeed;
-	c_jumps -= 2; //no idea why this has to be 2 for double jump
-	
+	c_jumps -= 2; //no idea why this has to be 2 for double jump	
 		
 }
 
@@ -69,6 +68,7 @@ if(place_meeting(x + c_hspeed, y, h_wall))
 	{
 			x += sign(c_hspeed); 
 	}
+	
 	c_hspeed = 0;
 }
 
@@ -85,7 +85,53 @@ if(place_meeting(x, y + c_vspeed, v_wall))
 }
 
 
+
+
+//end of movements
+
+
+
+//Start of body swap
+
+if(mouse_check_button_pressed(mb_left) && (instance_exists(obj_parent_body)))
+{
+	swap_pause = false;
+	if(swap_pause == false)
+	{
+		mouse_select_x = mouse_x;
+		mouse_select_y = mouse_y;
+		
+		alarm[0] = room_speed / 5;
+	}
+	
+	c_hspeed = 0;
+	c_vspeed = 0;
+
+}
+
+
+
+
+
 //add to player movement (Bottom of step most likely) ========================================================================
 
-x+= c_hspeed;
-y+= c_vspeed;
+if(swap_pause == true)
+{
+	x+= c_hspeed;
+	y+= c_vspeed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

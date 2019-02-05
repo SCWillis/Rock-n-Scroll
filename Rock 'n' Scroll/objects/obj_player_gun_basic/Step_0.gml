@@ -12,7 +12,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 
 if(mouse_check_button_pressed(mb_left))
 {
-	instance_create_depth(x,y,1,obj_bullet_basic);
+	instance_create_depth(x,y,1,obj_body_swap_test);
 }
 
 
