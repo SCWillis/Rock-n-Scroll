@@ -3,6 +3,7 @@
 
 
 global.current_player = obj_player_start;
+global.is_changing_host = false;
 
 
 

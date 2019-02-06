@@ -3,18 +3,10 @@
 
 is_current_player = false;
 
-name = "Enemy Guard";
-
-HP = 100;
-
-
-follow_path = true;
-
-local_path = path_add();
-path_add_point(local_path, x+10, y, 5);
-path_add_point(local_path, x-10, y, 5);
+name = "80's Hair Metal";
 
 //pos_x = 0;
 //pos_y = 0;
+
 //h_move_speed = 3;
 //v_move_speed = 3;

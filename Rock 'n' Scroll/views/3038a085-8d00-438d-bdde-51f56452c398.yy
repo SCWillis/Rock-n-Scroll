@@ -6,7 +6,8 @@
     "children": [
         "06f845af-c19c-4c26-aac1-f8f9b283be14",
         "05b84bc3-9617-46f1-86c8-c655f615a0dc",
-        "a5588859-f2a3-428e-84ba-bbf3662bcbee"
+        "a5588859-f2a3-428e-84ba-bbf3662bcbee",
+        "0b6e21a8-517e-4041-b35d-453e95ecac2c"
     ],
     "filterType": "GMObject",
     "folderName": "Player-Controllable",

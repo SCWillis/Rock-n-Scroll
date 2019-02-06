@@ -6,9 +6,6 @@
 if(id == global.current_player.id)
 {
 
-	//Player Movement
-	//if variable is lead by a c_ then it was made during creation.
-
 	//player input ==================================================================================
 
 	key_right = keyboard_check(ord("D"));
@@ -86,9 +83,16 @@ if(id == global.current_player.id)
 		c_vspeed = 0;
 	}
 
-	x+= c_hspeed;
-	y+= c_vspeed;
-
+	if(global.is_changing_host = false)
+	{
+		x+= c_hspeed;
+		y+= c_vspeed;
+	}
+	if(global.is_changing_host = true)//waits for player spirit to collide with new host
+	{
+		x+= 0;
+		y+= 0;
+	}
 }
 
 
@@ -171,8 +175,17 @@ if(id != global.current_player.id)
 		c_vspeed = 0;
 	}
 
-	x+= c_hspeed;
-	y+= c_vspeed;
+	if(global.is_changing_host = false) //player moves like normal
+	{
+		x+= c_hspeed;
+		y+= c_vspeed;
+		
+	}
+	if(global.is_changing_host = true)//waits for player spirit to collide with new host
+	{
+		x+= 0;
+		y+= 0;
+	}
 
 }
 	
@@ -181,16 +194,7 @@ if(id != global.current_player.id)
 //if the body is no longer the players and it was previously a host (needs to release a spirit and be destroyed)
 if(id != global.current_player.id && was_host == true)
 {
-	
-	
-	scr_destroy_host(x,y,obj_effect_spirit);
-	
-	//below can be removed - replaced with script
-	
-	//instance_create_depth(x,y,1,obj_effect_spirit);
-	//show_debug_message("Spirit Released!");
-	//instance_destroy();
-	
+	scr_destroy_host(x,y,obj_effect_spirit);	
 }
 
 

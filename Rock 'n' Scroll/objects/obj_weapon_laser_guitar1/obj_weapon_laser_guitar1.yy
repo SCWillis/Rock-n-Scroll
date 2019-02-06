@@ -1,33 +1,33 @@
 {
-    "id": "a5588859-f2a3-428e-84ba-bbf3662bcbee",
+    "id": "898ac503-b4bc-44d8-b389-417d322ffa59",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player_enemy_guard",
+    "name": "obj_weapon_laser_guitar1",
     "eventList": [
         {
-            "id": "2cb1c3b0-1bf2-4ef5-98bc-540da826eece",
+            "id": "1317d955-f65a-4a8e-8b3f-76c35bf3d636",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "898ac503-b4bc-44d8-b389-417d322ffa59"
+        },
+        {
+            "id": "8db7e339-3cbe-4ca7-ad31-75bfe864fd9a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "a5588859-f2a3-428e-84ba-bbf3662bcbee"
-        },
-        {
-            "id": "7ce265bb-d324-409e-a055-a46e8e3651d9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 3,
-            "m_owner": "a5588859-f2a3-428e-84ba-bbf3662bcbee"
+            "m_owner": "898ac503-b4bc-44d8-b389-417d322ffa59"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "06f845af-c19c-4c26-aac1-f8f9b283be14",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "49be1448-8887-4ce2-9481-f64c3f809b09",
+    "spriteId": "fcb5cb44-098a-421b-8a5d-bcd122991d43",
     "visible": true
 }

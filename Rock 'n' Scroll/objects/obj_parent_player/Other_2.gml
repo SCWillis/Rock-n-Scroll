@@ -5,6 +5,7 @@
 //
 was_host = false;
 
+
 //movement
 c_vspeed = 0;
 c_hspeed = 0;
