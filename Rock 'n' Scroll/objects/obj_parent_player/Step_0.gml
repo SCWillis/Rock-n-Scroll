@@ -192,15 +192,21 @@ if(id != global.current_player.id)
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //if the body is no longer the players and it was previously a host (needs to release a spirit and be destroyed)
-if(id != global.current_player.id && was_host == true)
+if((id != global.current_player.id && was_host == true) || (player_health <= 0))
 {
 	scr_destroy_host(x,y,obj_effect_spirit);	
 }
 
 
 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Various scripts to run each step
 
-
+if(instance_exists(self))
+{
+	scr_is_damaged_melee(self, obj_parent_hit_melee);
+	scr_is_damaged_range(self, obj_parent_ammo_range);
+}
 
 
 

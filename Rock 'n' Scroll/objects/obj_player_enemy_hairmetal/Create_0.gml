@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+player_health = 100;
+
+can_swing = true; // doesnt allow the host/player to swing constantly
 
 is_current_player = false;
 

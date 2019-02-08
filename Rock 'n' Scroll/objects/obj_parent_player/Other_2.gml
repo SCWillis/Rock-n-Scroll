@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 
+//player_health = 100;
+
+
 //
 was_host = false;
 
