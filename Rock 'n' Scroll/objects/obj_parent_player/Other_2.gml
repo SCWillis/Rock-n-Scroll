@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-//player_health = 100;
+player_health = 100;
 
 
 //
@@ -34,8 +34,11 @@ image_speed = img_speed_static;
 
 
 //all possible ground / wall objects for the player
-floorObjects[0] = obj_ground_basic;
-floorObjects[1] = obj_ground_basic2;
-floorObjects[2] = obj_ground_basic3;
+floorObjects[0] = obj_ground_basic01;
+floorObjects[1] = obj_ground_basic;
+floorObjects[2] = obj_ground_basic2;
+floorObjects[3] = obj_ground_basic3;
+floorObjects[4] = obj_ground_rocks01;
+
 
 

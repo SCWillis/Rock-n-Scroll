@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
 
@@ -7,6 +7,7 @@ global.is_changing_host = false;
 
 
 global.player_health = global.current_player.player_health;
+show_debug_message("Starting HP" + string_format(global.player_health, 5, 1));
 show_debug_message(string_format(global.player_health,5,1));
 
 
