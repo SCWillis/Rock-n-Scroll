@@ -6,7 +6,8 @@ if(place_meeting(argument0.x, argument0.y, argument1))
 {
 	if(argument0.id != global.current_player.id)
 	{	
-		argument0.player_health -= 10;
+		//argument0.player_health -= 10;
+		argument0.player_health -= argument1.damage;
 		instance_destroy(argument1.id);
 		show_debug_message("Player HP: "+ string_format(argument0.player_health,5,1));
 	}

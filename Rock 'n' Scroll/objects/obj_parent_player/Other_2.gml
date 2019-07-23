@@ -12,12 +12,12 @@ was_host = false;
 //movement
 c_vspeed = 0;
 c_hspeed = 0;
-c_movespeed = 8;
+c_movespeed = 6;
 c_buffer = 1;
 
 //jump
-c_jumpspeed = 10;
-c_fall_rate = 10;
+c_jumpspeed = 10 ;
+c_fall_rate = 15;
 c_gravity = 0.3;
 c_jumps = 0;
 c_max_jumps = 2; //multiples of 2. So 2 = double jump
@@ -39,6 +39,7 @@ floorObjects[1] = obj_ground_basic;
 floorObjects[2] = obj_ground_basic2;
 floorObjects[3] = obj_ground_basic3;
 floorObjects[4] = obj_ground_rocks01;
+floorObjects[5] = obj_ground_hell01; 
 
 
 
