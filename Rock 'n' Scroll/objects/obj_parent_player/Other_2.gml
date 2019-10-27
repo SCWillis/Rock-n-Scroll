@@ -7,7 +7,8 @@ player_health = 100;
 
 //
 was_host = false;
-
+is_player_gravity = 0.7;
+is_enemy_gravity = 0.1;
 
 //movement
 c_vspeed = 0;
@@ -16,9 +17,9 @@ c_movespeed = 6;
 c_buffer = 1;
 
 //jump
-c_jumpspeed = 10 ;
-c_fall_rate = 15;
-c_gravity = 0.3;
+c_jumpspeed = 15 ;
+c_fall_rate = 35;
+c_gravity = is_player_gravity;
 c_jumps = 0;
 c_max_jumps = 2; //multiples of 2. So 2 = double jump
 c_jump_lock = 1;

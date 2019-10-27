@@ -7,7 +7,7 @@ is_current_player = false;
 
 name = "Enemy Guard";
 
-HP = 100;
+//HP = 100;
 
 //mp_potential_settings(10,10,5,true);
 
